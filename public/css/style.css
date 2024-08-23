@@ -1,0 +1,48 @@
+.btn-ver{
+  background-color: #fff0;
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+  height: 100%;
+  color:#17a2b8;
+}
+.btn-ver:hover{
+  background-color: #fff0;
+
+}
+.btn-editar{
+  background-color: #fff0;
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+  height: 100%;
+  color: #28a745;
+}
+.btn-editar:hover{
+  background-color: #fff0;
+
+}
+.btn-eliminar{
+  background-color: #fff0;
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+  height: 100%;
+  color: #dc3545;
+}
+.btn-eliminar:hover{
+  background-color: #fff0;
+
+}
+.btn-cuota{
+  background-color: #fff0;
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+  height: 100%;
+  color: #efb810;
+}
+.btn-cuota:hover{
+  background-color: #fff0;
+
+}
