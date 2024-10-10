@@ -14,6 +14,7 @@ class Cuota extends Model
         'fecha_pago',
         'importe',
         'activa',
+        'notificado'
 
 
   ];

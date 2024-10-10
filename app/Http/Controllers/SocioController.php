@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Socio;
 use App\Cuota;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SocioController extends Controller
 {
@@ -37,14 +38,31 @@ class SocioController extends Controller
      */
     public function store(Request $request)
     {
-      //return $request->all();
-        $socio = new Socio($request->input());
+      DB::beginTransaction();
+      try {
+        //return $request->all();
+        $socio = new Socio($request->except('cuota'));
         $socio->saveOrFail();
 
+        $cuota = new Cuota($request->input('cuota'));
+        $cuota->socio_id = $socio->id;
+        $cuota->activa = 1;
+        $cuota->notificado = 0;
+        $cuota->saveOrFail();
+
+        DB::commit();
+
         return redirect()->route("socios.index")->with([
-                "mensaje" => "¡Socio agregado con exito!",
-                "tipo" => "success"
-            ]);
+          "mensaje" => "¡Socio y cuota agregados con éxito!",
+          "tipo" => "success"
+        ]);
+      } catch (\Exception $e) {
+        DB::rollback();
+        return redirect()->back()->with([
+          "mensaje" => "¡Error al agregar socio y cuota!" . $e->getMessage(),
+          "tipo" => "danger"
+        ])->withInput();
+      }
     }
 
     /**

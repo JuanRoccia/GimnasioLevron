@@ -238,7 +238,7 @@
 
 
 
-  $( ".btn-eliminar" ).click(function() {
+  $(document).on('click', '.btn-eliminar', function() {
     $('#nombre-socio').html($(this).data("nombresocio"));
     $('#form-eliminar-socio').attr('action', 'socios/'+$(this).data("idsocio"))
   $('#modal-delete').modal('show');

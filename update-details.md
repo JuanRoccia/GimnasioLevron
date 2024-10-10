@@ -1,259 +1,671 @@
-juanm@LAPTOP-U776L98U MINGW64 ~/OneDrive/Escritorio/gimnasio-levron-main (hotfix)      
-$ composer update
-Loading composer repositories with package information
-Updating dependencies
-Lock file operations: 27 installs, 44 updates, 10 removals
-  - Removing asm89/stack-cors (1.3.0)
-  - Removing facade/flare-client-php (1.10.0)
-  - Removing facade/ignition (2.17.7)
-  - Removing facade/ignition-contracts (1.0.2)
-  - Removing fzaninotto/faker (dev-master 5ffe7db)
-  - Removing opis/closure (3.6.3)
-  - Removing phpunit/php-token-stream (4.0.4)
-  - Removing swiftmailer/swiftmailer (v6.3.0)
-  - Removing symfony/polyfill-iconv (v1.30.0)
-  - Removing symfony/polyfill-php73 (v1.30.0)
-  - Downgrading brick/math (0.12.1 => 0.11.0)
-  - Locking dflydev/dot-access-data (v3.0.3)
-  - Upgrading doctrine/instantiator (1.5.0 => 2.0.0)
-  - Upgrading doctrine/lexer (1.2.3 => 3.0.1)
-  - Upgrading dragonmantank/cron-expression (v2.3.1 => v3.3.3)
-  - Upgrading egulias/email-validator (2.1.25 => 4.0.2)       
-  - Locking fakerphp/faker (v1.23.1)
-  - Upgrading fruitcake/laravel-cors (v1.0.6 => v3.0.0)
-  - Locking fruitcake/php-cors (v1.3.0)
-  - Locking graham-campbell/result-type (v1.1.3)
-  - Locking guzzlehttp/uri-template (v1.0.3)
-  - Upgrading laravel/framework (v7.30.6 => v9.52.16)
-  - Locking laravel/sail (v1.31.1)
-  - Locking laravel/serializable-closure (v1.3.4)
-  - Upgrading laravel/ui (v2.5.0 => v4.5.2)
-  - Upgrading league/commonmark (1.6.7 => 2.5.3)
-  - Locking league/config (v1.2.0)
-  - Upgrading league/flysystem (1.1.10 => 3.28.0)
-  - Locking league/flysystem-local (3.28.0)
-  - Locking nette/schema (v1.3.0)
-  - Locking nette/utils (v4.0.5)
-  - Upgrading nunomaduro/collision (v4.3.0 => v6.4.0)
-  - Locking nunomaduro/termwind (v1.15.1)
-  - Upgrading phpunit/php-code-coverage (7.0.17 => 9.2.32)
-  - Upgrading phpunit/php-file-iterator (2.0.6 => 3.0.6)
-  - Locking phpunit/php-invoker (3.1.1)
-  - Upgrading phpunit/php-text-template (1.2.1 => 2.0.4)
-  - Upgrading phpunit/php-timer (2.1.4 => 5.0.3)
-  - Upgrading phpunit/phpunit (8.5.39 => 9.6.20)
-  - Upgrading psr/container (1.1.2 => 2.0.2)
-  - Upgrading psr/log (2.0.0 => 3.0.1)
-  - Upgrading psr/simple-cache (1.0.1 => 3.0.0)
-  - Locking sebastian/cli-parser (1.0.2)
-  - Locking sebastian/code-unit (1.0.8)
-  - Upgrading sebastian/code-unit-reverse-lookup (1.0.3 => 2.0.3)
-  - Upgrading sebastian/comparator (3.0.5 => 4.0.8)
-  - Locking sebastian/complexity (2.0.3)
-  - Upgrading sebastian/diff (3.0.6 => 4.0.6)
-  - Upgrading sebastian/environment (4.2.5 => 5.1.5)
-  - Upgrading sebastian/exporter (3.1.6 => 4.0.6)
-  - Upgrading sebastian/global-state (3.0.5 => 5.0.7)
-  - Locking sebastian/lines-of-code (1.0.4)
-  - Upgrading sebastian/object-enumerator (3.0.5 => 4.0.4)
-  - Upgrading sebastian/object-reflector (1.1.3 => 2.0.4)
-  - Upgrading sebastian/recursion-context (3.0.2 => 4.0.5)
-  - Upgrading sebastian/resource-operations (2.0.3 => 3.0.4)
-  - Upgrading sebastian/type (1.1.5 => 3.2.1)
-  - Upgrading sebastian/version (2.0.1 => 3.0.2)
-  - Locking spatie/backtrace (1.6.2)
-  - Locking spatie/flare-client-php (1.8.0)
-  - Locking spatie/ignition (1.14.2)
-  - Locking spatie/laravel-ignition (1.7.0)
-  - Upgrading symfony/console (v5.4.42 => v6.4.10)
-  - Upgrading symfony/error-handler (v5.4.42 => v6.4.10)
-  - Upgrading symfony/event-dispatcher (v6.4.8 => v7.1.1)
-  - Upgrading symfony/finder (v5.4.42 => v6.4.10)
-  - Upgrading symfony/http-foundation (v5.4.42 => v6.4.10)
-  - Upgrading symfony/http-kernel (v5.4.42 => v6.4.10)
-  - Locking symfony/mailer (v6.4.9)
-  - Upgrading symfony/mime (v5.4.41 => v6.4.9)
-  - Locking symfony/polyfill-php83 (v1.30.0)
-  - Locking symfony/polyfill-uuid (v1.30.0)
-  - Upgrading symfony/process (v5.4.40 => v6.4.8)
-  - Upgrading symfony/routing (v5.4.42 => v6.4.10)
-  - Upgrading symfony/string (v6.4.10 => v7.1.3)
-  - Locking symfony/uid (v6.4.8)
-  - Upgrading symfony/var-dumper (v5.4.42 => v6.4.10)
-  - Locking symfony/yaml (v7.1.1)
-  - Upgrading vlucas/phpdotenv (v4.3.0 => v5.6.1)
-  - Upgrading voku/portable-ascii (1.6.1 => 2.0.1)
-  - Locking webmozart/assert (1.11.0)
-Writing lock file
-Installing dependencies from lock file (including require-dev)
-Package operations: 27 installs, 44 updates, 10 removals
-  - Downloading symfony/var-dumper (v6.4.10)
-  - Downloading symfony/uid (v6.4.8)
-  - Downloading symfony/routing (v6.4.10)
-  - Downloading symfony/mime (v6.4.9)
-  - Downloading symfony/mailer (v6.4.9)
-  - Downloading symfony/http-foundation (v6.4.10)
-  - Downloading symfony/error-handler (v6.4.10)
-  - Downloading symfony/http-kernel (v6.4.10)
-  - Downloading brick/math (0.11.0)
-  - Downloading nunomaduro/termwind (v1.15.1)
-  - Downloading laravel/framework (v9.52.16)
-  - Downloading fruitcake/laravel-cors (v3.0.0)
-  - Downloading nunomaduro/collision (v6.4.0)
-  - Downloading sebastian/version (3.0.2)
-  - Downloading sebastian/type (3.2.1)
-  - Downloading sebastian/resource-operations (3.0.4)
-  - Downloading sebastian/recursion-context (4.0.5)
-  - Downloading sebastian/object-reflector (2.0.4)
-  - Downloading sebastian/object-enumerator (4.0.4)
-  - Downloading sebastian/global-state (5.0.7)
-  - Downloading sebastian/exporter (4.0.6)
-  - Downloading sebastian/environment (5.1.5)
-  - Downloading sebastian/diff (4.0.6)
-  - Downloading sebastian/comparator (4.0.8)
-  - Downloading sebastian/code-unit (1.0.8)
-  - Downloading sebastian/cli-parser (1.0.2)
-  - Downloading phpunit/php-timer (5.0.3)
-  - Downloading phpunit/php-text-template (2.0.4)
-  - Downloading phpunit/php-invoker (3.1.1)
-  - Downloading phpunit/php-file-iterator (3.0.6)
-  - Downloading sebastian/lines-of-code (1.0.4)
-  - Downloading sebastian/complexity (2.0.3)
-  - Downloading sebastian/code-unit-reverse-lookup (2.0.3)
-  - Downloading phpunit/php-code-coverage (9.2.32)
-  - Downloading doctrine/instantiator (2.0.0)
-  - Downloading phpunit/phpunit (9.6.20)
-  - Downloading spatie/backtrace (1.6.2)
-  - Downloading spatie/flare-client-php (1.8.0)
-  - Downloading spatie/ignition (1.14.2)
-  - Downloading spatie/laravel-ignition (1.7.0)
-  - Removing symfony/polyfill-php73 (v1.30.0)
-  - Removing symfony/polyfill-iconv (v1.30.0)
-  - Removing swiftmailer/swiftmailer (v6.3.0)
-  - Removing phpunit/php-token-stream (4.0.4)
-  - Removing opis/closure (3.6.3)
-  - Removing fzaninotto/faker (dev-master 5ffe7db)
-  - Removing facade/ignition-contracts (1.0.2)
-  - Removing facade/ignition (2.17.7)
-  - Removing facade/flare-client-php (1.10.0)
-  - Removing asm89/stack-cors (1.3.0)
-  - Upgrading doctrine/lexer (1.2.3 => 3.0.1): Extracting archive
-  - Installing webmozart/assert (1.11.0): Extracting archive
-  - Upgrading dragonmantank/cron-expression (v2.3.1 => v3.3.3): Extracting archive
-  - Upgrading psr/container (1.1.2 => 2.0.2): Extracting archive
-  - Installing fakerphp/faker (v1.23.1): Extracting archive
-  - Upgrading voku/portable-ascii (1.6.1 => 2.0.1): Extracting archive
-  - Installing graham-campbell/result-type (v1.1.3): Extracting archive
-  - Upgrading vlucas/phpdotenv (v4.3.0 => v5.6.1): Extracting archive
-  - Upgrading symfony/var-dumper (v5.4.42 => v6.4.10): Extracting archive
-  - Installing symfony/polyfill-uuid (v1.30.0): Extracting archive
-  - Installing symfony/uid (v6.4.8): Extracting archive
-  - Upgrading symfony/routing (v5.4.42 => v6.4.10): Extracting archive
-  - Upgrading symfony/process (v5.4.40 => v6.4.8): Extracting archive
-  - Upgrading symfony/mime (v5.4.41 => v6.4.9): Extracting archive
-  - Upgrading symfony/event-dispatcher (v6.4.8 => v7.1.1): Extracting archive
-  - Upgrading psr/log (2.0.0 => 3.0.1): Extracting archive
-  - Upgrading egulias/email-validator (2.1.25 => 4.0.2): Extracting archive
-  - Installing symfony/mailer (v6.4.9): Extracting archive
-  - Installing symfony/polyfill-php83 (v1.30.0): Extracting archive
-  - Upgrading symfony/http-foundation (v5.4.42 => v6.4.10): Extracting archive
-  - Upgrading symfony/error-handler (v5.4.42 => v6.4.10): Extracting archive
-  - Upgrading symfony/http-kernel (v5.4.42 => v6.4.10): Extracting archive
-  - Upgrading symfony/finder (v5.4.42 => v6.4.10): Extracting archive
-  - Upgrading symfony/string (v6.4.10 => v7.1.3): Extracting archive
-  - Upgrading symfony/console (v5.4.42 => v6.4.10): Extracting archive
-  - Downgrading brick/math (0.12.1 => 0.11.0): Extracting archive
-  - Upgrading psr/simple-cache (1.0.1 => 3.0.0): Extracting archive
-  - Installing nunomaduro/termwind (v1.15.1): Extracting archive
-  - Upgrading league/flysystem (1.1.10 => 3.28.0): Extracting archive
-  - Installing league/flysystem-local (3.28.0): Extracting archive
-  - Installing nette/utils (v4.0.5): Extracting archive
-  - Installing nette/schema (v1.3.0): Extracting archive
-  - Installing dflydev/dot-access-data (v3.0.3): Extracting archive
-  - Installing league/config (v1.2.0): Extracting archive
-  - Upgrading league/commonmark (1.6.7 => 2.5.3): Extracting archive
-  - Installing laravel/serializable-closure (v1.3.4): Extracting archive
-  - Installing guzzlehttp/uri-template (v1.0.3): Extracting archive
-  - Installing fruitcake/php-cors (v1.3.0): Extracting archive
-  - Upgrading laravel/framework (v7.30.6 => v9.52.16): Extracting archive
-  - Upgrading fruitcake/laravel-cors (v1.0.6 => v3.0.0): Extracting archive
-  - Installing symfony/yaml (v7.1.1): Extracting archive
-  - Installing laravel/sail (v1.31.1): Extracting archive
-  - Upgrading laravel/ui (v2.5.0 => v4.5.2): Extracting archive
-  - Upgrading nunomaduro/collision (v4.3.0 => v6.4.0): Extracting archive
-  - Upgrading sebastian/version (2.0.1 => 3.0.2): Extracting archive
-  - Upgrading sebastian/type (1.1.5 => 3.2.1): Extracting archive
-  - Upgrading sebastian/resource-operations (2.0.3 => 3.0.4): Extracting archive
-  - Upgrading sebastian/recursion-context (3.0.2 => 4.0.5): Extracting archive
-  - Upgrading sebastian/object-reflector (1.1.3 => 2.0.4): Extracting archive
-  - Upgrading sebastian/object-enumerator (3.0.5 => 4.0.4): Extracting archive
-  - Upgrading sebastian/global-state (3.0.5 => 5.0.7): Extracting archive
-  - Upgrading sebastian/exporter (3.1.6 => 4.0.6): Extracting archive
-  - Upgrading sebastian/environment (4.2.5 => 5.1.5): Extracting archive
-  - Upgrading sebastian/diff (3.0.6 => 4.0.6): Extracting archive
-  - Upgrading sebastian/comparator (3.0.5 => 4.0.8): Extracting archive
-  - Installing sebastian/code-unit (1.0.8): Extracting archive
-  - Installing sebastian/cli-parser (1.0.2): Extracting archive
-  - Upgrading phpunit/php-timer (2.1.4 => 5.0.3): Extracting archive
-  - Upgrading phpunit/php-text-template (1.2.1 => 2.0.4): Extracting archive
-  - Installing phpunit/php-invoker (3.1.1): Extracting archive
-  - Upgrading phpunit/php-file-iterator (2.0.6 => 3.0.6): Extracting archive
-  - Installing sebastian/lines-of-code (1.0.4): Extracting archive
-  - Installing sebastian/complexity (2.0.3): Extracting archive
-  - Upgrading sebastian/code-unit-reverse-lookup (1.0.3 => 2.0.3): Extracting archive  
-  - Upgrading phpunit/php-code-coverage (7.0.17 => 9.2.32): Extracting archive
-  - Upgrading doctrine/instantiator (1.5.0 => 2.0.0): Extracting archive
-  - Upgrading phpunit/phpunit (8.5.39 => 9.6.20): Extracting archive
-  - Installing spatie/backtrace (1.6.2): Extracting archive
-  - Installing spatie/flare-client-php (1.8.0): Extracting archive
-  - Installing spatie/ignition (1.14.2): Extracting archive
-  - Installing spatie/laravel-ignition (1.7.0): Extracting archive
-6 package suggestions were added by new dependencies, use `composer suggest` to see details.
-Package fruitcake/laravel-cors is abandoned, you should avoid using it. No replacement 
-was suggested.
-Generating optimized autoload files
-> Illuminate\Foundation\ComposerScripts::postAutoloadDump
-> @php artisan package:discover --ansi
+<!-- resources/views/socios/index.blade.php -->
 
-   INFO  Discovering packages.
+@extends('layouts.master')
+@section("h1", "Socios")
 
-  fideloper/proxy .............................................................. DONE  
-  fruitcake/laravel-cors ....................................................... DONE  
-  laravel/sail ................................................................. DONE  
-  laravel/tinker ............................................................... DONE  
-  laravel/ui ................................................................... DONE  
-  nesbot/carbon ................................................................ DONE  
-  nunomaduro/collision ......................................................... DONE  
-  nunomaduro/termwind .......................................................... DONE  
-  spatie/laravel-ignition ...................................................... DONE  
+@section('content')
+@include('notification')
 
-85 packages you are using are looking for funding.
-Use the `composer fund` command to find out more!
-> @php artisan vendor:publish --tag=laravel-assets --ansi --force
-
-   INFO  No publishable resources for tag [laravel-assets].
-
-No security vulnerability advisories found
-
-juanm@LAPTOP-U776L98U MINGW64 ~/OneDrive/Escritorio/gimnasio-levron-main (hotfix)      
-$ php artisan view:clear
-
-   INFO  Compiled views cleared successfully.
+  <div class="row">
+    <div class="col-md-12">
+      <a href="/socios/create" class="btn btn-success">Nuevo Socio</a>
+    </div>
+  </div>
 
 
-juanm@LAPTOP-U776L98U MINGW64 ~/OneDrive/Escritorio/gimnasio-levron-main (hotfix)
-$ php artisan cache:clear
+  <div class="card-body">
+    <table id="example1" class="table table-bordered ">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre y apellido</th>
+        <th>DNI</th>
+        <th>fecha de ingreso</th>
+        <th>Accion</th>
+      </tr>
+      </thead>
+      <tbody>
+        @foreach($socios as $socio)
+        <tr>
+          <td>{{$socio->id}}</td>
+          <td>{{$socio->nombre}} {{$socio->apellido}}</td>
+          <td>{{$socio->nro_doc}}</td>
+          <td>{{$socio->fecha_ingreso}}</td>
+          <td>
 
-   INFO  Application cache cleared successfully.
+            <a class="btn btn-app btn-cuota" href="cuotas/create?socio_id={{$socio->id}}">
+              <i class="fas fa-money-check-alt"></i> Cuota
+            </a>
+
+            <a class="btn btn-app btn-ver" href="{{route("socios.show",[$socio])}}">
+              <i class="fas fa-eye"></i> Ver
+            </a>
+            <a class="btn btn-app btn-editar" href="{{route("socios.edit",[$socio])}}">
+              <i class="fas fa-edit"></i> Editar
+            </a>
+            <a class="btn btn-app btn-eliminar" data-toggle="modal" data-idsocio="{{$socio->id}}" data-nombresocio="{{$socio->nombre}} {{$socio->apellido}}">
+              <i class="fas fa-trash"></i> eliminar
+            </a>
+        </td>
+        </tr>
+        @endforeach
+      </tbody>
+    </table>
+  </div>
+@include('socios.modals.confirm-delete')
+  <script type="text/javascript">
+  $( document ).ready(function() {
+      $("#example1").DataTable({
+        responsive: true,
+        language:{
+    "processing": "Procesando...",
+    "lengthMenu": "Mostrar _MENU_ registros",
+    "zeroRecords": "No se encontraron resultados",
+    "emptyTable": "Ningún dato disponible en esta tabla",
+    "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+    "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+    "search": "Buscar:",
+    "infoThousands": ",",
+    "loadingRecords": "Cargando...",
+    "paginate": {
+        "first": "Primero",
+        "last": "Último",
+        "next": "Siguiente",
+        "previous": "Anterior"
+    },
+    "aria": {
+        "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+        "sortDescending": ": Activar para ordenar la columna de manera descendente"
+    },
+    "buttons": {
+        "copy": "Copiar",
+        "colvis": "Visibilidad",
+        "collection": "Colección",
+        "colvisRestore": "Restaurar visibilidad",
+        "copyKeys": "Presione ctrl o u2318 + C para copiar los datos de la tabla al portapapeles del sistema. <br \/> <br \/> Para cancelar, haga clic en este mensaje o presione escape.",
+        "copySuccess": {
+            "1": "Copiada 1 fila al portapapeles",
+            "_": "Copiadas %d fila al portapapeles"
+        },
+        "copyTitle": "Copiar al portapapeles",
+        "csv": "CSV",
+        "excel": "Excel",
+        "pageLength": {
+            "-1": "Mostrar todas las filas",
+            "1": "Mostrar 1 fila",
+            "_": "Mostrar %d filas"
+        },
+        "pdf": "PDF",
+        "print": "Imprimir"
+    },
+    "autoFill": {
+        "cancel": "Cancelar",
+        "fill": "Rellene todas las celdas con <i>%d<\/i>",
+        "fillHorizontal": "Rellenar celdas horizontalmente",
+        "fillVertical": "Rellenar celdas verticalmentemente"
+    },
+    "decimal": ",",
+    "searchBuilder": {
+        "add": "Añadir condición",
+        "button": {
+            "0": "Constructor de búsqueda",
+            "_": "Constructor de búsqueda (%d)"
+        },
+        "clearAll": "Borrar todo",
+        "condition": "Condición",
+        "conditions": {
+            "date": {
+                "after": "Despues",
+                "before": "Antes",
+                "between": "Entre",
+                "empty": "Vacío",
+                "equals": "Igual a",
+                "notBetween": "No entre",
+                "notEmpty": "No Vacio",
+                "not": "Diferente de"
+            },
+            "number": {
+                "between": "Entre",
+                "empty": "Vacio",
+                "equals": "Igual a",
+                "gt": "Mayor a",
+                "gte": "Mayor o igual a",
+                "lt": "Menor que",
+                "lte": "Menor o igual que",
+                "notBetween": "No entre",
+                "notEmpty": "No vacío",
+                "not": "Diferente de"
+            },
+            "string": {
+                "contains": "Contiene",
+                "empty": "Vacío",
+                "endsWith": "Termina en",
+                "equals": "Igual a",
+                "notEmpty": "No Vacio",
+                "startsWith": "Empieza con",
+                "not": "Diferente de"
+            },
+            "array": {
+                "not": "Diferente de",
+                "equals": "Igual",
+                "empty": "Vacío",
+                "contains": "Contiene",
+                "notEmpty": "No Vacío",
+                "without": "Sin"
+            }
+        },
+        "data": "Data",
+        "deleteTitle": "Eliminar regla de filtrado",
+        "leftTitle": "Criterios anulados",
+        "logicAnd": "Y",
+        "logicOr": "O",
+        "rightTitle": "Criterios de sangría",
+        "title": {
+            "0": "Constructor de búsqueda",
+            "_": "Constructor de búsqueda (%d)"
+        },
+        "value": "Valor"
+    },
+    "searchPanes": {
+        "clearMessage": "Borrar todo",
+        "collapse": {
+            "0": "Paneles de búsqueda",
+            "_": "Paneles de búsqueda (%d)"
+        },
+        "count": "{total}",
+        "countFiltered": "{shown} ({total})",
+        "emptyPanes": "Sin paneles de búsqueda",
+        "loadMessage": "Cargando paneles de búsqueda",
+        "title": "Filtros Activos - %d"
+    },
+    "select": {
+        "1": "%d fila seleccionada",
+        "_": "%d filas seleccionadas",
+        "cells": {
+            "1": "1 celda seleccionada",
+            "_": "$d celdas seleccionadas"
+        },
+        "columns": {
+            "1": "1 columna seleccionada",
+            "_": "%d columnas seleccionadas"
+        }
+    },
+    "thousands": ".",
+    "datetime": {
+        "previous": "Anterior",
+        "next": "Proximo",
+        "hours": "Horas",
+        "minutes": "Minutos",
+        "seconds": "Segundos",
+        "unknown": "-",
+        "amPm": [
+            "am",
+            "pm"
+        ]
+    },
+    "editor": {
+        "close": "Cerrar",
+        "create": {
+            "button": "Nuevo",
+            "title": "Crear Nuevo Registro",
+            "submit": "Crear"
+        },
+        "edit": {
+            "button": "Editar",
+            "title": "Editar Registro",
+            "submit": "Actualizar"
+        },
+        "remove": {
+            "button": "Eliminar",
+            "title": "Eliminar Registro",
+            "submit": "Eliminar",
+            "confirm": {
+                "_": "¿Está seguro que desea eliminar %d filas?",
+                "1": "¿Está seguro que desea eliminar 1 fila?"
+            }
+        },
+        "error": {
+            "system": "Ha ocurrido un error en el sistema (<a target=\"\\\" rel=\"\\ nofollow\" href=\"\\\">Más información&lt;\\\/a&gt;).<\/a>"
+        },
+        "multi": {
+            "title": "Múltiples Valores",
+            "info": "Los elementos seleccionados contienen diferentes valores para este registro. Para editar y establecer todos los elementos de este registro con el mismo valor, hacer click o tap aquí, de lo contrario conservarán sus valores individuales.",
+            "restore": "Deshacer Cambios",
+            "noMulti": "Este registro puede ser editado individualmente, pero no como parte de un grupo."
+        }
+    },
+    "info": "Mostrando de _START_ a _END_ de _TOTAL_ entradas"
+}
+      });
 
 
-juanm@LAPTOP-U776L98U MINGW64 ~/OneDrive/Escritorio/gimnasio-levron-main (hotfix)
-$ php artisan config:clear
 
-   INFO  Configuration cache cleared successfully.
+  $( ".btn-eliminar" ).click(function() {
+    $('#nombre-socio').html($(this).data("nombresocio"));
+    $('#form-eliminar-socio').attr('action', 'socios/'+$(this).data("idsocio"))
+  $('#modal-delete').modal('show');
+});
+});
+
+  </script>
+@endsection
+
+<!-- app/Http/Controllers/SocioController.php -->
+
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Socio;
+use App\Cuota;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
+class SocioController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $socios = Socio::all();
+        return view('socios.index',compact('socios'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('socios.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+      DB::beginTransaction();
+      try {
+        //return $request->all();
+        $socio = new Socio($request->except('cuota'));
+        $socio->saveOrFail();
+
+        $cuota = new Cuota($request->input('cuota'));
+        $cuota->socio_id = $socio->id;
+        $cuota->activa = 1;
+        $cuota->notificado = 0;
+        $cuota->saveOrFail();
+
+        DB::commit();
+
+        return redirect()->route("socios.index")->with([
+          "mensaje" => "¡Socio y cuota agregados con éxito!",
+          "tipo" => "success"
+        ]);
+      } catch (\Exception $e) {
+        DB::rollback();
+        return redirect()->back()->with([
+          "mensaje" => "¡Error al agregar socio y cuota!" . $e->getMessage(),
+          "tipo" => "danger"
+        ])->withInput();
+      }
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Socio  $socio
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Socio $socio)
+    {
+        $cuotas = Cuota::where('socio_id',$socio->id)->get();
+        return view("socios.show", ["socio" => $socio,"cuotas" => $cuotas]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Socio  $socio
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Socio $socio)
+    {
+        return view("socios.edit", ["socio" => $socio]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Socio  $socio
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Socio $socio)
+    {
+      $socio->fill($request->input());
+      $socio->saveOrFail();
+      return redirect()->route("socios.index")->with([
+              "mensaje" => "¡Socio Actualizado con exito!",
+              "tipo" => "success"
+          ]);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Socio  $socio
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Socio $socio)
+    {
+      $cuotas_anteriores = Cuota::where('socio_id',$socio->id)->where('activa',1)->get();
+      if ($cuotas_anteriores->count() > 0) {
+        foreach ($cuotas_anteriores as $cuota_anterior) {
+          $cuota_anterior->activa = 0;
+          $cuota_anterior->save();
+        }
+      }
+      $socio->delete();
+      return redirect()->route("socios.index")->with([
+              "mensaje" => "¡Socio Eliminado con exito!",
+              "tipo" => "danger"
+          ]);
+    }
+}
+
+<!-- resources/views/socios/modals/confirm-delte.blade.php -->
+
+<div class="modal fade" id="modal-delete">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"  style="background-color: #dc3545;color: white;">
+        <h4 class="modal-title">Eliminar Cliente</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>¿Estas seguro que desea elimiar a <span id="nombre-socio"></span>?</p>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <form action="" method="post" id="form-eliminar-socio">
+            @method("delete")
+            @csrf
+            <button type="submit" class="btn btn-danger">eliminar</button>
+        </form>
+
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+<!-- resources/views/socios/index.blade.php -->
+
+@extends('layouts.master')
+@section("h1", "Socios")
+
+@section('content')
+@include('notification')
+
+  <div class="row">
+    <div class="col-md-12">
+      <a href="/socios/create" class="btn btn-success">Nuevo Socio</a>
+    </div>
+  </div>
 
 
-juanm@LAPTOP-U776L98U MINGW64 ~/OneDrive/Escritorio/gimnasio-levron-main (hotfix)
-$ php artisan route:clear
+  <div class="card-body">
+    <table id="example1" class="table table-bordered ">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre y apellido</th>
+        <th>DNI</th>
+        <th>fecha de ingreso</th>
+        <th>Accion</th>
+      </tr>
+      </thead>
+      <tbody>
+        @foreach($socios as $socio)
+        <tr>
+          <td>{{$socio->id}}</td>
+          <td>{{$socio->nombre}} {{$socio->apellido}}</td>
+          <td>{{$socio->nro_doc}}</td>
+          <td>{{$socio->fecha_ingreso}}</td>
+          <td>
 
-   INFO  Route cache cleared successfully.
+            <a class="btn btn-app btn-cuota" href="cuotas/create?socio_id={{$socio->id}}">
+              <i class="fas fa-money-check-alt"></i> Cuota
+            </a>
+
+            <a class="btn btn-app btn-ver" href="{{route("socios.show",[$socio])}}">
+              <i class="fas fa-eye"></i> Ver
+            </a>
+            <a class="btn btn-app btn-editar" href="{{route("socios.edit",[$socio])}}">
+              <i class="fas fa-edit"></i> Editar
+            </a>
+            <a class="btn btn-app btn-eliminar" data-toggle="modal" data-idsocio="{{$socio->id}}" data-nombresocio="{{$socio->nombre}} {{$socio->apellido}}">
+              <i class="fas fa-trash"></i> eliminar
+            </a>
+        </td>
+        </tr>
+        @endforeach
+      </tbody>
+    </table>
+  </div>
+@include('socios.modals.confirm-delete')
+  <script type="text/javascript">
+  $( document ).ready(function() {
+      $("#example1").DataTable({
+        responsive: true,
+        language:{
+    "processing": "Procesando...",
+    "lengthMenu": "Mostrar _MENU_ registros",
+    "zeroRecords": "No se encontraron resultados",
+    "emptyTable": "Ningún dato disponible en esta tabla",
+    "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+    "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+    "search": "Buscar:",
+    "infoThousands": ",",
+    "loadingRecords": "Cargando...",
+    "paginate": {
+        "first": "Primero",
+        "last": "Último",
+        "next": "Siguiente",
+        "previous": "Anterior"
+    },
+    "aria": {
+        "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+        "sortDescending": ": Activar para ordenar la columna de manera descendente"
+    },
+    "buttons": {
+        "copy": "Copiar",
+        "colvis": "Visibilidad",
+        "collection": "Colección",
+        "colvisRestore": "Restaurar visibilidad",
+        "copyKeys": "Presione ctrl o u2318 + C para copiar los datos de la tabla al portapapeles del sistema. <br \/> <br \/> Para cancelar, haga clic en este mensaje o presione escape.",
+        "copySuccess": {
+            "1": "Copiada 1 fila al portapapeles",
+            "_": "Copiadas %d fila al portapapeles"
+        },
+        "copyTitle": "Copiar al portapapeles",
+        "csv": "CSV",
+        "excel": "Excel",
+        "pageLength": {
+            "-1": "Mostrar todas las filas",
+            "1": "Mostrar 1 fila",
+            "_": "Mostrar %d filas"
+        },
+        "pdf": "PDF",
+        "print": "Imprimir"
+    },
+    "autoFill": {
+        "cancel": "Cancelar",
+        "fill": "Rellene todas las celdas con <i>%d<\/i>",
+        "fillHorizontal": "Rellenar celdas horizontalmente",
+        "fillVertical": "Rellenar celdas verticalmentemente"
+    },
+    "decimal": ",",
+    "searchBuilder": {
+        "add": "Añadir condición",
+        "button": {
+            "0": "Constructor de búsqueda",
+            "_": "Constructor de búsqueda (%d)"
+        },
+        "clearAll": "Borrar todo",
+        "condition": "Condición",
+        "conditions": {
+            "date": {
+                "after": "Despues",
+                "before": "Antes",
+                "between": "Entre",
+                "empty": "Vacío",
+                "equals": "Igual a",
+                "notBetween": "No entre",
+                "notEmpty": "No Vacio",
+                "not": "Diferente de"
+            },
+            "number": {
+                "between": "Entre",
+                "empty": "Vacio",
+                "equals": "Igual a",
+                "gt": "Mayor a",
+                "gte": "Mayor o igual a",
+                "lt": "Menor que",
+                "lte": "Menor o igual que",
+                "notBetween": "No entre",
+                "notEmpty": "No vacío",
+                "not": "Diferente de"
+            },
+            "string": {
+                "contains": "Contiene",
+                "empty": "Vacío",
+                "endsWith": "Termina en",
+                "equals": "Igual a",
+                "notEmpty": "No Vacio",
+                "startsWith": "Empieza con",
+                "not": "Diferente de"
+            },
+            "array": {
+                "not": "Diferente de",
+                "equals": "Igual",
+                "empty": "Vacío",
+                "contains": "Contiene",
+                "notEmpty": "No Vacío",
+                "without": "Sin"
+            }
+        },
+        "data": "Data",
+        "deleteTitle": "Eliminar regla de filtrado",
+        "leftTitle": "Criterios anulados",
+        "logicAnd": "Y",
+        "logicOr": "O",
+        "rightTitle": "Criterios de sangría",
+        "title": {
+            "0": "Constructor de búsqueda",
+            "_": "Constructor de búsqueda (%d)"
+        },
+        "value": "Valor"
+    },
+    "searchPanes": {
+        "clearMessage": "Borrar todo",
+        "collapse": {
+            "0": "Paneles de búsqueda",
+            "_": "Paneles de búsqueda (%d)"
+        },
+        "count": "{total}",
+        "countFiltered": "{shown} ({total})",
+        "emptyPanes": "Sin paneles de búsqueda",
+        "loadMessage": "Cargando paneles de búsqueda",
+        "title": "Filtros Activos - %d"
+    },
+    "select": {
+        "1": "%d fila seleccionada",
+        "_": "%d filas seleccionadas",
+        "cells": {
+            "1": "1 celda seleccionada",
+            "_": "$d celdas seleccionadas"
+        },
+        "columns": {
+            "1": "1 columna seleccionada",
+            "_": "%d columnas seleccionadas"
+        }
+    },
+    "thousands": ".",
+    "datetime": {
+        "previous": "Anterior",
+        "next": "Proximo",
+        "hours": "Horas",
+        "minutes": "Minutos",
+        "seconds": "Segundos",
+        "unknown": "-",
+        "amPm": [
+            "am",
+            "pm"
+        ]
+    },
+    "editor": {
+        "close": "Cerrar",
+        "create": {
+            "button": "Nuevo",
+            "title": "Crear Nuevo Registro",
+            "submit": "Crear"
+        },
+        "edit": {
+            "button": "Editar",
+            "title": "Editar Registro",
+            "submit": "Actualizar"
+        },
+        "remove": {
+            "button": "Eliminar",
+            "title": "Eliminar Registro",
+            "submit": "Eliminar",
+            "confirm": {
+                "_": "¿Está seguro que desea eliminar %d filas?",
+                "1": "¿Está seguro que desea eliminar 1 fila?"
+            }
+        },
+        "error": {
+            "system": "Ha ocurrido un error en el sistema (<a target=\"\\\" rel=\"\\ nofollow\" href=\"\\\">Más información&lt;\\\/a&gt;).<\/a>"
+        },
+        "multi": {
+            "title": "Múltiples Valores",
+            "info": "Los elementos seleccionados contienen diferentes valores para este registro. Para editar y establecer todos los elementos de este registro con el mismo valor, hacer click o tap aquí, de lo contrario conservarán sus valores individuales.",
+            "restore": "Deshacer Cambios",
+            "noMulti": "Este registro puede ser editado individualmente, pero no como parte de un grupo."
+        }
+    },
+    "info": "Mostrando de _START_ a _END_ de _TOTAL_ entradas"
+}
+      });
+
+
+
+  $( ".btn-eliminar" ).click(function() {
+    $('#nombre-socio').html($(this).data("nombresocio"));
+    $('#form-eliminar-socio').attr('action', 'socios/'+$(this).data("idsocio"))
+  $('#modal-delete').modal('show');
+});
+});
+
+  </script>
+@endsection
+
+
+
+# TODO:
+el boton de eliminar socio no funciona correctamente cuando estamos en la seccion de socios lo elimina correctamente pero cunado filtramos por el buscador este no realiza ninuna accion
+
+como te daras cuenta se trata de una aplicacion CRUD desarrollada en laravel
