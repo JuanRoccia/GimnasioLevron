@@ -110,20 +110,20 @@
               <!-- Add icons to the links using the .nav-icon class
                    with font-awesome or any other icon font library -->
              <li class="nav-item">
-               <a href="/socios" class="nav-link">
-                 <i class="far fa-circle nav-icon"></i>
+               <a href="/socios" class="nav-link {{ request()->is('socios*') ? 'active' : '' }}">
+                 <i class="{{ request()->is('socios*') ? 'fas fa-check-circle' : 'far fa-circle' }} nav-icon"></i>
                  <p>Socios</p>
                </a>
              </li>
              <li class="nav-item">
-               <a href="/cuotas" class="nav-link">
-                 <i class="far fa-circle nav-icon"></i>
+               <a href="/cuotas" class="nav-link {{ request()->is('cuotas*') ? 'active' : '' }}">
+                 <i class="{{ request()->is('cuotas*') ? 'fas fa-check-circle' : 'far fa-circle' }} nav-icon"></i>
                  <p>Cuotas</p>
                </a>
              </li>
              <li class="nav-item">
-               <a href="/usuarios" class="nav-link">
-                 <i class="far fa-circle nav-icon"></i>
+               <a href="/usuarios" class="nav-link {{ request()->is('usuarios*') ? 'active' : '' }}">
+                 <i class="{{ request()->is('usuarios*') ? 'fas fa-check-circle' : 'far fa-circle' }} nav-icon"></i>
                  <p>Usuarios</p>
                </a>
              </li>

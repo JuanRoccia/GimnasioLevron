@@ -15,7 +15,14 @@ class CreateCuotasTable extends Migration
     {
         Schema::create('cuotas', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('socio_id');
+            $table->decimal('monto', 8, 2);
+            $table->date('fecha_pago');
+            $table->string('metodo_pago');
+            $table->boolean('activa')->default(true);
             $table->timestamps();
+
+            $table->foreign('socio_id')->references('id')->on('socios')->onDelete('cascade');
         });
     }
 
